@@ -14,7 +14,8 @@
         <x-main-nav />
 
         <x-hero-component title="Novas <strong>modalidades</strong> e ampliação de <strong>horários</strong>."
-            subtitle="Aulas de 45 minutos e período de teste gratuito." />
+            subtitle="Aulas de 45 minutos e período de teste gratuito."
+            knowMoreLink="{{ env('WHATSAPP_ULR_MESSAGE') }}" />
     </header>
 
     <main>

@@ -1,23 +1,10 @@
-{{-- <div class="menu-mobile menu-container">
-    <div class="hamburger"></div>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="overlay"></div>
-</div> --}}
-
 <nav class="main-nav centralized-container">
     <div class="main-nav-container">
         <a href="#" title="eZoom" class="eZoomLogo">{!! \App\Helpers\SvgHelper::getSvg('eZoomLogo') !!}</a>
 
         <div class="inner-links-container menu-mobile menu-container" data-js="nav-menu-container">
 
-            <div class="search-class mobile">
+            <div class="search-class mobile elementHover">
                 <a href="#">{!! \App\Helpers\SvgHelper::getSvg('searchGreenIcon', 'svg/icons') !!}</a>
             </div>
 
@@ -44,7 +31,7 @@
                     </ul>
                 @endif
 
-                <div class="search-class desktop">
+                <div class="search-class desktop elementHover">
                     <a href="#">{!! \App\Helpers\SvgHelper::getSvg('searchGreenIcon', 'svg/icons') !!}</a>
                 </div>
 

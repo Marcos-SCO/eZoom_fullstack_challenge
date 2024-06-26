@@ -73,6 +73,9 @@
         color: #fff;
         list-style: none;
 
+        position: relative;
+        z-index: 99;
+
         // padding-right: 1rem;
 
         display: flex;

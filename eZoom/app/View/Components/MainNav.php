@@ -10,23 +10,21 @@ class MainNav extends Component
 {
     public $ulLinksArray;
     public $socialMediaLinks;
+    public $whatsAppUrl;
+    public $githubUrl;
+    public $linkedInUrl;
 
     function defaultSocialLinks()
     {
-        $whatsAppUrl =
-            'https://api.whatsapp.com/send?phone=5511916459334&text=Olá+Marcos+tudo+bem?+Vim+por+meio+do+link+no+site+eZoom+e+gostaria+de+conversar+com+você.';
-
-        $linkedinUrl = 'https://www.linkedin.com/in/marcos-sco/';
-
         $socialIconsPath = 'svg/icons/social';
 
         $socialMediaLinks = [
-            ['https://github.com/Marcos-SCO' => 'facebook', 'path' => $socialIconsPath],
-            [$whatsAppUrl => 'instagram', 'path' => $socialIconsPath],
-            [$whatsAppUrl => 'youtube', 'path' => $socialIconsPath],
-            [$linkedinUrl => 'tiktok', 'path' => $socialIconsPath],
-            [$linkedinUrl => 'mic', 'path' => $socialIconsPath],
-            [$linkedinUrl => 'linkedin', 'path' => $socialIconsPath],
+            [$this->githubUrl => 'facebook', 'path' => $socialIconsPath],
+            [$this->whatsAppUrl => 'instagram', 'path' => $socialIconsPath],
+            [$this->whatsAppUrl => 'youtube', 'path' => $socialIconsPath],
+            [$this->linkedInUrl => 'tiktok', 'path' => $socialIconsPath],
+            [$this->linkedInUrl => 'mic', 'path' => $socialIconsPath],
+            [$this->linkedInUrl => 'linkedin', 'path' => $socialIconsPath],
         ];
 
         return $socialMediaLinks;
@@ -37,22 +35,28 @@ class MainNav extends Component
      */
     public function __construct($ulLinksArrayParams = [], $socialMediaLinks = [])
     {
+        $this->whatsAppUrl = env('WHATSAPP_ULR_MESSAGE');
+
+        $this->linkedInUrl = env('GITHUB_ULR_MESSAGE');
+
+        $this->githubUrl = env('GITHUB_ULR_MESSAGE');
+
         $haveUlParams = sizeof($ulLinksArrayParams) > 0;
 
         $haveSocialMediaParams =
             sizeof($socialMediaLinks) > 0;
 
         $this->ulLinksArray = [
-            ['#' => 'Home'],
-            ['#' => 'About'],
-            ['#' => 'Contact'],
+            [$this->whatsAppUrl => 'Home'],
+            [$this->githubUrl => 'About'],
+            [$this->linkedInUrl => 'Contact'],
         ];
 
         if ($haveUlParams) {
             $this->ulLinksArray = $ulLinksArrayParams;
         }
 
-        $this->socialMediaLinks = $this->defaultSocialLinks();;
+        $this->socialMediaLinks = $this->defaultSocialLinks();
 
         if ($haveSocialMediaParams) {
             $this->socialMediaLinks = $ulLinksArrayParams;

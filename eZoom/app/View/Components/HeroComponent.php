@@ -10,12 +10,15 @@ class HeroComponent extends Component
 {
     public $title;
     public $subtitle;
+    public $knowMoreLink;
 
     /**
      * Create a new component instance.
      */
-    public function __construct($title, $subtitle)
+    public function __construct($title, $subtitle, $knowMoreLink = false)
     {
+        if ($knowMoreLink) $this->knowMoreLink = $knowMoreLink;
+
         $this->title = $title;
         $this->subtitle = $subtitle;
     }

@@ -5,7 +5,11 @@
 
             <h3 class="sub-title">{!! $subtitle !!}</h3>
 
-            <a href="#" class="action-button white">Saiba Mais</a>
+            @php
+                $linkTarget = str_contains($knowMoreLink, '#') ? '_self' : '_blank';
+            @endphp
+
+            <a href="{!! $knowMoreLink ?? '#' !!}" target="{{ $linkTarget }}" class="action-button white">Saiba Mais</a>
         </div>
     </div>
 </div>
