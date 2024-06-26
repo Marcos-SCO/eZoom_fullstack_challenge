@@ -7,7 +7,7 @@
 
     $menuMobileBreakpoint: 980px;
 
-    @media (min-width: $menuMobileBreakpoint) {
+    @media (min-width: 980.99px) {
 
         .eZoomLogo.mobile,
         .search-class.mobile,
@@ -52,15 +52,15 @@
             @media (min-width: 600px) {
                 right: 2.5rem;
             }
-            
+
             @media (min-width: 860px) {
                 right: 1rem;
             }
         }
 
         .eZoomLogo {
-          padding-top: 3.2rem;
-          padding-bottom: 1rem;
+            padding-top: 3.2rem;
+            padding-bottom: 1rem;
         }
 
         .search-links {
@@ -68,6 +68,7 @@
             align-items: flex-start;
 
             padding: 0 0 3rem !important;
+
         }
 
         .search-class.desktop {
@@ -163,7 +164,7 @@
             padding: 20px;
 
             @media (max-width: 320px) {
-              width: 13.625rem;
+                width: 13.625rem;
             }
 
             ul {

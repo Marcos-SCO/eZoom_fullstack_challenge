@@ -24,7 +24,7 @@ body {
 a, .elementHover {
     opacity: .95;
 
-    transition: all ease-in-out .3s;
+    transition: transform ease-in-out .3s, opacity ease-in-out .3s;
 
     &:hover {
         transform: translateY(-.1rem);
