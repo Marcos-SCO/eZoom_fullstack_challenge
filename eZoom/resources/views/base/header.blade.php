@@ -18,6 +18,9 @@
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
+
+        <x-hero-component title="Novas <strong>modalidades</strong> e ampliação de <strong>horários</strong>."
+        subtitle="Aulas de 45 minutos e período de teste gratuito." />
     </header>
 
     <main>
