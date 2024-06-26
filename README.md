@@ -15,6 +15,7 @@ cp .env.example .env
 
 ### Give project folder permissions
 ```bash
+sudo chown -R $USER:$USER ./eZoom
 sudo chmod -R 777 eZoom
 ```
 
