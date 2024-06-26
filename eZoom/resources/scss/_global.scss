@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
 html,
@@ -31,7 +36,27 @@ header {
     height: 100%;
 }
 
+.eZoomLogo {
+    display: block;
+}
+
 main {
-  background-color: aquamarine;
-  min-height: 500px;
+    background-color: aquamarine;
+    min-height: 500px;
+}
+
+.centralized-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    // max-width: 1678px;
+    max-width: 1678px;
+
+    @media (max-width: 1000px) {
+        padding: 0 7%!important;
+    }
+
+    @media (min-width: 1000px) and (max-width: 1920px) {
+        padding: 0 7%!important;
+    }
 }
