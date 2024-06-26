@@ -1,0 +1,11 @@
+.news-section {
+    font-family: 'Barlow', sans-serif;
+
+    display: flex;
+
+    @import 'categoryInfo';
+
+    @import 'newsCard';
+
+
+}

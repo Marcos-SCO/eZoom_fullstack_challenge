@@ -19,3 +19,26 @@
     </header>
 
     <main>
+
+        <article class="news-categories centralized-container" data-js="news-categories">
+
+            <section class="news-section" data-js="news-section">
+
+                <div class="category-info">
+                    <h3 class="category-title">Esportes</h3>
+                    <p class="category-description">Lorem Ipsum dolor Sit Amet Lorem.</p>
+
+                    @php
+                        $knowMoreLink = env('WHATSAPP_ULR_MESSAGE');
+
+                        $linkTarget = str_contains($knowMoreLink, '#') ? '_self' : '_blank';
+                    @endphp
+                    <a href="{!! $knowMoreLink ?? '#' !!}" target="{{ $linkTarget }}" class="action-button black">Ver Todos</a>
+                </div>
+
+                <div class="news-card">
+                    
+                </div>
+            </section>
+
+        </article>
