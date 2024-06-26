@@ -11,17 +11,7 @@
 
 <body>
     <header class="main-header">
-        <nav>
-            <a href="#" title="eZoom">
-                {!! \App\Helpers\SvgHelper::getSvg('eZoomLogo') !!}
-            </a>
-
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <x-main-nav />
 
         <x-hero-component title="Novas <strong>modalidades</strong> e ampliação de <strong>horários</strong>."
             subtitle="Aulas de 45 minutos e período de teste gratuito." />

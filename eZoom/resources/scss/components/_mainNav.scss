@@ -1,0 +1,132 @@
+.main-nav {
+    // position: absolute;
+    // background: #FF5722;
+    width: 100%;
+    padding: 7rem 0;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 10rem; // 160px
+
+    @media (min-height: 787px) {
+        // padding: 2rem 0;
+    }
+
+    @media (min-width: 640px) {
+        // padding-bottom: 3rem;
+    }
+
+    @media (min-width: 1200px) {}
+
+    @media (min-width: 1400px) {
+        min-height: 12.5rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            border-top: 0.3125rem solid #fff; // 5px
+            display: block;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 86%;
+        }
+    }
+
+    @media (min-width: 1800px) {
+        min-height: 13.5rem; // 216px
+    }
+
+    @media (min-width: 1920px) {
+        // padding: 3rem 0;
+        // padding-bottom: 5rem;
+
+        &::before {
+            max-width: 1678px;
+        }
+    }
+
+    .main-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .inner-links-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        max-width: 589px;
+    }
+
+    .search-class {
+        // padding-right: 3rem;
+    }
+
+    .search-links {
+        color: #fff;
+        list-style: none;
+
+        // padding-right: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        // gap: 1rem;
+
+        li {
+            font-family: 'Barlow', sans-serif;
+
+            padding-right: 2rem;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            width: 13.5rem; // 216px
+            max-width: 13.5rem; // 216px
+
+            min-height: 1.1875rem; // 19px
+            // top: 6.1875rem; // 99px
+            // left: 98.875rem; // 1582px
+
+        }
+
+        @media (min-width: 1920px) {
+            left: -2rem;
+            position: relative;
+        }
+    }
+
+    .social-itens {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        max-width: 216px;
+
+        a {
+            font-family: 'Barlow', sans-serif;
+
+            padding-right: 1rem;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
