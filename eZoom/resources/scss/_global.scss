@@ -21,6 +21,11 @@ body {
     height: 100vh;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 a, .elementHover {
     opacity: .95;
 
@@ -43,6 +48,9 @@ header {
 main {
     // background-color: aquamarine;
     min-height: 500px;
+
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .centralized-container {

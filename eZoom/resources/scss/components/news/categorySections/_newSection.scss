@@ -1,11 +1,82 @@
 .news-section {
     font-family: 'Barlow', sans-serif;
 
+    position: relative;
+
     display: flex;
+
+    flex-wrap: wrap;
+
+    padding: 4rem 0;
+
+    width: 100%;
+
+    // width: 26.875rem; // 430px
+    // height: 31.625rem; // 506px
+
+    border-radius: 0.625rem 0 0 0; // 10px 0px 0px 0px
 
     @import 'categoryInfo';
 
     @import 'newsCard';
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 0.75rem; // 12px
+        height: 100%;
+
+        border-radius: 0.625rem 0 0 0.625rem; // 10px 0px 0px 10px
+        background-color: #ccc;
+    }
+
+    &.green::before {
+        background-color: #42B073;
+    }
+
+    @media (max-width: 300px) {
+        &::before {
+            opacity: 0;
+        }
+
+        flex-direction: column;
+        align-items: center;
+        
+        padding: .15rem;
+    }
+    
+    @media (min-width:300px) and (max-width: 639.99px) {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 1rem 2rem;
+
+        &::before {}
+    }
+
+    @media (max-width:850.99px) {
+        justify-content: center;
+    }
+
+    @media (min-width: 1920px) {
+
+        width: 104.875rem; // 1678px
+        height: 25rem; // 400px
+
+        border-radius: 0.625rem 0 0 0; // 10px 0px 0px 0px
+    }
+
+
+    &:nth-child(odd) {
+        background-color: #F7F7F7;
+    }
+
+    &:nth-child(even) {
+        background-color: #fff;
+    }
 
 
 }

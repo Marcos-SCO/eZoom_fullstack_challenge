@@ -21,8 +21,16 @@
     <main>
 
         <article class="news-categories centralized-container" data-js="news-categories">
+            @php
+                $postTitle = 'Lorem Ipsum dolor Sit Amet Dolor lorem ipsum';
 
-            <section class="news-section" data-js="news-section">
+                $publicationTitle = '10 de Abril 2023';
+
+                $containerColorDetail = 'green';
+            @endphp
+
+            <section class="news-section {{ $containerColorDetail }}" data-js="news-section">
+
 
                 <div class="category-info">
                     <h3 class="category-title">Esportes</h3>
@@ -33,12 +41,43 @@
 
                         $linkTarget = str_contains($knowMoreLink, '#') ? '_self' : '_blank';
                     @endphp
-                    <a href="{!! $knowMoreLink ?? '#' !!}" target="{{ $linkTarget }}" class="action-button black">Ver Todos</a>
+                    <a href="{!! $knowMoreLink ?? '#' !!}" target="{{ $linkTarget }}" class="action-button black">Ver
+                        Todos</a>
                 </div>
 
-                <div class="news-card">
-                    
+                <div class="cards-container">
+
+                    <div class="news-card {{ $containerColorDetail }}">
+                        <a href="#" title="{{ $postTitle }}">
+                            <figure class="figure-container">
+                                <img src="{{ asset('img/card/basketballPlayer.jpg') }}" alt="" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <div class="block-container">
+                            <a href="#" title="{{ $postTitle }}">
+                                <h3 class="card-title">{{ $postTitle }}</h3>
+                            </a>
+
+                            <div class="card-bottom">
+                                <a href="#" title="{{ $publicationTitle }}">
+                                    <p class="news-publication">
+                                        {{ $publicationTitle }}
+                                    </p>
+                                </a>
+
+                                <a href="#" title="{{ $postTitle }}">
+                                    <span class="arrow-svg-container">
+                                        {!! \App\Helpers\SvgHelper::getSvg('arrow', 'svg/icons') !!}
+                                    </span>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </section>
 
         </article>

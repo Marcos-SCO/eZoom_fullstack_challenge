@@ -1,1 +1,11 @@
 @import '_newSection';
+
+.news-categories {
+
+    @media (max-width: 640px) {
+        &.centralized-container {
+
+          padding: 0!important;
+        }
+    }
+}
