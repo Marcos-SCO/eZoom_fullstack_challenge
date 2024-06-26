@@ -10,8 +10,12 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <nav>
+            <a href="#" title="eZoom">
+                {!! \App\Helpers\SvgHelper::getSvg('eZoomLogo') !!}
+            </a>
+
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
@@ -20,7 +24,7 @@
         </nav>
 
         <x-hero-component title="Novas <strong>modalidades</strong> e ampliação de <strong>horários</strong>."
-        subtitle="Aulas de 45 minutos e período de teste gratuito." />
+            subtitle="Aulas de 45 minutos e período de teste gratuito." />
     </header>
 
     <main>
