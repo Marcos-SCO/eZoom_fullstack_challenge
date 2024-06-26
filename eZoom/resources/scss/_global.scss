@@ -21,7 +21,7 @@ body {
     height: 100vh;
 }
 
-a {
+a, .elementHover {
     opacity: .95;
 
     transition: all ease-in-out .3s;
