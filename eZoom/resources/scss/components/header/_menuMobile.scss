@@ -30,7 +30,8 @@
         .search-class.mobile {
 
             position: absolute;
-            right: 3.5rem;
+            // right: 3.2rem;
+            right: 4.2rem;
 
             svg {
                 width: 26px;
@@ -50,11 +51,12 @@
             }
 
             @media (min-width: 600px) {
-                right: 2.5rem;
+                right: 5rem;
             }
 
             @media (min-width: 860px) {
-                right: 1rem;
+                // right: 1rem;
+                right: 4.5rem;
             }
         }
 
@@ -81,8 +83,10 @@
 
         // Hamburger button
         .hamburger {
-            position: fixed;
-            right: 1.25rem; // 20px
+            // position: fixed;
+            // right: 1.25rem; // 20px
+            position: absolute;
+            right: 0; 
 
             width: $hamburgerSize;
             height: $hamburgerSize;
