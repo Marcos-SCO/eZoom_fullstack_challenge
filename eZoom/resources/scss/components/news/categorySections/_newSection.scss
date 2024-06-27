@@ -7,11 +7,13 @@
 
     justify-content: center;
 
-    padding: 4rem 0;
+    padding: 3rem 0;
 
     width: 100%;
 
     overflow: hidden;
+
+    margin-top: 1rem;
 
     // width: 26.875rem; // 430px
     // height: 31.625rem; // 506px
@@ -37,6 +39,22 @@
 
     &.green::before {
         background-color: #42B073;
+    }
+
+    &.brown::before {
+        background-color: #9B836B;
+    }
+    
+    &.blue::before {
+        background-color: #24BEFF;
+    }
+    
+    &.orange::before {
+        background-color: #FF632D;
+    }
+    
+    &.yellow::before {
+        background-color: #FFD400;
     }
 
     @media (max-width: 300px) {
