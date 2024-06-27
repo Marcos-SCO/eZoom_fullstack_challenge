@@ -1,3 +1,4 @@
 import './bootstrap';
 
-import './menu'
+import './owlCarousel';
+import './menu';

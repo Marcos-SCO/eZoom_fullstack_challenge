@@ -5,11 +5,13 @@
 
     display: flex;
 
-    flex-wrap: wrap;
+    justify-content: center;
 
     padding: 4rem 0;
 
     width: 100%;
+
+    overflow: hidden;
 
     // width: 26.875rem; // 430px
     // height: 31.625rem; // 506px
@@ -58,15 +60,23 @@
     }
 
     @media (max-width:850.99px) {
+        flex-wrap: wrap;
+
         justify-content: center;
     }
 
     @media (min-width: 1920px) {
+        flex-wrap: nowrap;
 
-        width: 104.875rem; // 1678px
-        height: 25rem; // 400px
+        // width: 104.875rem; // 1678px
+        // max-width: 104.875rem; // 1678px
+        max-width: 1678px; // 1678px
+        min-height: 25rem; // 400px
+        // height: 25rem; // 400px
 
         border-radius: 0.625rem 0 0 0; // 10px 0px 0px 0px
+
+        justify-content: space-evenly;
     }
 
 

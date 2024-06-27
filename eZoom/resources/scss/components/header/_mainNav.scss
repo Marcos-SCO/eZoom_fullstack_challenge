@@ -39,6 +39,13 @@
         min-height: 13.5rem; // 216px
     }
 
+    @media (max-width: 1919.99px) {
+
+        &::before {
+            max-width: 86%;
+        }
+    }
+
     @media (min-width: 1920px) {
         // padding: 3rem 0;
         // padding-bottom: 5rem;

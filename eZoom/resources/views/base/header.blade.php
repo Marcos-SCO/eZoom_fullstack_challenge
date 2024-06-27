@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'eZoom')</title>
 
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
+    @vite(['resources/scss/app.scss'])
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
     <main>
 
-        <article class="news-categories centralized-container" data-js="news-categories">
+        <article class="news-categories centralized-container" data-js="news-categories-container">
             @php
                 $postTitle = 'Lorem Ipsum dolor Sit Amet Dolor lorem ipsum';
 
@@ -30,7 +31,6 @@
             @endphp
 
             <section class="news-section {{ $containerColorDetail }}" data-js="news-section">
-
 
                 <div class="category-info">
                     <h3 class="category-title">Esportes</h3>
@@ -47,35 +47,101 @@
 
                 <div class="cards-container">
 
-                    <div class="news-card {{ $containerColorDetail }}">
-                        <a href="#" title="{{ $postTitle }}">
-                            <figure class="figure-container">
-                                <img src="{{ asset('img/card/basketballPlayer.jpg') }}" alt="" loading="lazy">
-                            </figure>
-                        </a>
+                    <div class="owl-carousel" data-js="news-categories-slider">
 
-                        <div class="block-container">
+                        <div class="item news-card {{ $containerColorDetail }}">
                             <a href="#" title="{{ $postTitle }}">
-                                <h3 class="card-title">{{ $postTitle }}</h3>
+                                <figure class="figure-container">
+                                    <img src="{{ asset('img/card/basketballPlayer.jpg') }}" alt="" loading="lazy">
+                                </figure>
                             </a>
-
-                            <div class="card-bottom">
-                                <a href="#" title="{{ $publicationTitle }}">
-                                    <p class="news-publication">
-                                        {{ $publicationTitle }}
-                                    </p>
-                                </a>
-
+                        
+                            <div class="block-container">
                                 <a href="#" title="{{ $postTitle }}">
-                                    <span class="arrow-svg-container">
-                                        {!! \App\Helpers\SvgHelper::getSvg('arrow', 'svg/icons') !!}
-                                    </span>
+                                    <h3 class="card-title">{{ $postTitle }}</h3>
                                 </a>
-
+                        
+                                <div class="card-bottom">
+                                    <a href="#" title="{{ $publicationTitle }}">
+                                        <p class="news-publication">
+                                            {{ $publicationTitle }}
+                                        </p>
+                                    </a>
+                        
+                                    <a href="#" title="{{ $postTitle }}">
+                                        <span class="arrow-svg-container">
+                                            {!! \App\Helpers\SvgHelper::getSvg('arrow', 'svg/icons') !!}
+                                        </span>
+                                    </a>
+                        
+                                </div>
                             </div>
+                        
+                        </div>
+
+                        <div class="item news-card {{ $containerColorDetail }}">
+                            <a href="#" title="{{ $postTitle }}">
+                                <figure class="figure-container">
+                                    <img src="{{ asset('img/card/basketballPlayer.jpg') }}" alt="" loading="lazy">
+                                </figure>
+                            </a>
+                        
+                            <div class="block-container">
+                                <a href="#" title="{{ $postTitle }}">
+                                    <h3 class="card-title">{{ $postTitle }}</h3>
+                                </a>
+                        
+                                <div class="card-bottom">
+                                    <a href="#" title="{{ $publicationTitle }}">
+                                        <p class="news-publication">
+                                            {{ $publicationTitle }}
+                                        </p>
+                                    </a>
+                        
+                                    <a href="#" title="{{ $postTitle }}">
+                                        <span class="arrow-svg-container">
+                                            {!! \App\Helpers\SvgHelper::getSvg('arrow', 'svg/icons') !!}
+                                        </span>
+                                    </a>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="item news-card {{ $containerColorDetail }}">
+                            <a href="#" title="{{ $postTitle }}">
+                                <figure class="figure-container">
+                                    <img src="{{ asset('img/card/basketballPlayer.jpg') }}" alt="" loading="lazy">
+                                </figure>
+                            </a>
+                        
+                            <div class="block-container">
+                                <a href="#" title="{{ $postTitle }}">
+                                    <h3 class="card-title">{{ $postTitle }}</h3>
+                                </a>
+                        
+                                <div class="card-bottom">
+                                    <a href="#" title="{{ $publicationTitle }}">
+                                        <p class="news-publication">
+                                            {{ $publicationTitle }}
+                                        </p>
+                                    </a>
+                        
+                                    <a href="#" title="{{ $postTitle }}">
+                                        <span class="arrow-svg-container">
+                                            {!! \App\Helpers\SvgHelper::getSvg('arrow', 'svg/icons') !!}
+                                        </span>
+                                    </a>
+                        
+                                </div>
+                            </div>
+                        
                         </div>
 
                     </div>
+
                 </div>
 
             </section>
