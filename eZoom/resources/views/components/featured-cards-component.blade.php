@@ -6,7 +6,7 @@
 
 @endphp
 
-<div class="featured-cards cards-container">
+<section class="featured-cards cards-container">
 
     <div class="owl-carousel" data-js="featured-cards">
 
@@ -20,7 +20,7 @@
 
             @endphp
 
-            <div class="item news-card {{ $cardColor }}">
+            <div class="item featured-card {{ $cardColor }}">
 
                 <a href="#" title="{{ $sectionPostTitle }}">
                     <figure class="figure-container">
@@ -53,4 +53,4 @@
         @endforeach
 
     </div>
-</div>
+</section>

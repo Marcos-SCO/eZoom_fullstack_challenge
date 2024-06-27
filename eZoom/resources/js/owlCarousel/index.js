@@ -88,7 +88,7 @@ function owlCarouselFunctions() {
         },
         // breakpoint from 480 up
         480: {
-          items: 3,
+          items: 2,
           dots: true,
         },
         // breakpoint from 768 up
@@ -97,6 +97,10 @@ function owlCarouselFunctions() {
           dots: true,
         },
         1000: {
+          items: 4,
+          dots: false,
+        },
+        1300: {
           items: 5,
           dots: false,
         },
