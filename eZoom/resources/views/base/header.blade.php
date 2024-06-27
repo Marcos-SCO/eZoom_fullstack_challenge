@@ -21,6 +21,11 @@
 
     <main>
 
+        <!-- Whatsapp btn -->
+        <a href="{{ env('WHATSAPP_ULR_MESSAGE') }}" class="whatsappButton" target="_blank" id="whats">
+            {!! \App\Helpers\SvgHelper::getSvg('whatsapp', 'svg/icons/social') !!}
+        </a>
+
         <x-featured-cards-component />
 
         <x-news-categories-component />
