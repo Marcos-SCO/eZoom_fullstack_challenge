@@ -74,6 +74,22 @@
     &.green .figure-container::before {
         background-color: #42B073;
     }
+    
+    &.brown .figure-container::before {
+        background-color: #9B836B;
+    }
+    
+    &.blue .figure-container::before {
+        background-color: #24BEFF;
+    }
+    
+    &.orange .figure-container::before {
+        background-color: #FF632D;
+    }
+    
+    &.yellow .figure-container::before {
+        background-color: #FFD400;
+    }
 
     .figure-container {}
 
