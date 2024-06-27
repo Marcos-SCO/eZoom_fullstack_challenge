@@ -16,7 +16,7 @@
 
 @endphp
 
-<section class="news-section {{ $categoryColor }}" data-js="news-section">
+<section class="news-section {{ $categoryColor }} hide" data-anima="center" data-js="news-section">
 
     <div class="category-info">
         <h3 class="category-title">{{ $categoryName }}</h3>
