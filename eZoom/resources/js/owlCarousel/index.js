@@ -63,6 +63,52 @@ function owlCarouselFunctions() {
     });
   }
 
+  // ------------- ------------- -------------
+  
+  // FeaturedCards itens
+  const featuredCards = $('[data-js="featured-cards"]');
+  const featuredCardsLoaded = featuredCards.attr('data-loaded');
+
+  if (featuredCards && !featuredCardsLoaded) {
+
+    featuredCards.attr('data-loaded', true);
+
+    featuredCards.owlCarousel({
+      loop: true,
+      margin: 0,
+      autoplay: true,
+      autoplayTimeout: 7000,
+      autoplayHoverPause: true,
+      dots: false,
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+          dots: true,
+        },
+        // breakpoint from 480 up
+        480: {
+          items: 3,
+          dots: true,
+        },
+        // breakpoint from 768 up
+        900: {
+          items: 3,
+          dots: true,
+        },
+        1000: {
+          items: 5,
+          dots: false,
+        },
+        // breakpoint from 1000 up
+        1161: {
+          items: 5,
+          dots: false,
+        }
+      }
+    });
+  }
+
 }
 
 document.addEventListener('DOMContentLoaded', owlCarouselFunctions);

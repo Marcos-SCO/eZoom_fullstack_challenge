@@ -45,7 +45,8 @@
 
                     <a href="#" title="{{ $sectionPostTitle }}">
                         <figure class="figure-container">
-                            <img src="{{ asset('img/card/' . $sectionPostImg) }}" alt="" loading="lazy">
+                            <img src="{{ asset('img/card/' . $sectionPostImg) }}" alt="{{ $sectionPostImg }}"
+                                loading="lazy">
                         </figure>
                     </a>
 

@@ -21,4 +21,6 @@
 
     <main>
 
+        <x-featured-cards-component />
+
         <x-news-categories-component />
