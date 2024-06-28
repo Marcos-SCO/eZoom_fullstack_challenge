@@ -6,11 +6,12 @@
     height: 100%;
     min-height: 600px;
 
-    @media (min-width: 340px) {
-        min-height: 500px;
+    @media (orientation: landscape) and (min-width: 339.99px) and (max-width: 599.9px) {
+
+        min-height: 770px;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 599.99px) {
         min-height: 920px;
     }
 
@@ -24,9 +25,5 @@
 
     @media (min-height: 1500px) {
         min-height: calc(800px + 100%);
-    }
-
-    @media (orientation: landscape) {
-        min-height: 770px;
     }
 }
