@@ -4,6 +4,7 @@ import { preventPassiveWarning } from '../helpers/dom/preventPassiveWarning';
 
 import 'owl.carousel';
 
+
 function owlCarouselFunctions() {
   // Prevents passive warnings caused by Jquery lib
   preventPassiveWarning('touchstart');
@@ -115,4 +116,4 @@ function owlCarouselFunctions() {
 
 }
 
-document.addEventListener('DOMContentLoaded', owlCarouselFunctions);
+document.addEventListener('DOMContentLoaded', owlCarouselFunctions, { passive: false });

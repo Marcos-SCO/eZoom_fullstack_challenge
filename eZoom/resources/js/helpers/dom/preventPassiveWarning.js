@@ -1,15 +1,21 @@
-const preventPassiveWarning = event => {
-  if (!jQuery) return;
+function preventPassiveWarning(eventType) {
+  const originalAddEventListener =
+    EventTarget.prototype.addEventListener;
 
-  jQuery.event.special[event] = {
-    setup: function (_, ns, handle) {
-      if (ns.includes("noPreventDefault")) {
-        this.addEventListener(event, handle, { passive: false });
+  EventTarget.prototype.addEventListener = function (type, listener, options) {
+
+    if (type === eventType) {
+
+      if (typeof options === 'object') {
+        options.passive = false;
       } else {
-        this.addEventListener(event, handle, { passive: true });
+        options = { passive: false };
       }
+
     }
-  }
+
+    return originalAddEventListener.call(this, type, listener, options);
+  };
 }
 
 export { preventPassiveWarning };
