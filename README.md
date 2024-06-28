@@ -3,6 +3,10 @@
 Projeto realizado em um ambiente Docker com Laravel.
 Possui uma página para demonstração contendo o front-end
 
+## Hospedagem 
+
+<a href="https://ezoom.infinityfreeapp.com" target="_blank">https://ezoom.infinityfreeapp.com</a>
+
 ### Tecnologias Utilizadas 💻
 
 - Docker
