@@ -4,7 +4,7 @@ Projeto realizado em um ambiente Docker com Laravel.
 Possui uma página para demonstração contendo o front-end
 
 <p>Front-end feito a partir do <a href="https://www.figma.com/design/xuFhpFgBqe8enSOlWMsnUd/TesteDev?node-id=0-1&node-type=canvas" target="_blank">Figma</a></p>
-<p>Disponível para acesso em: <a href="https://ezoom.infinityfreeapp.com" target="_blank">https://ezoom.infinityfreeapp.com</a></p>
+<p>Disponível para acesso em: <a href="http://ezoomfullstacklaravel.infinityfreeapp.com/" target="_blank">http://ezoomfullstacklaravel.infinityfreeapp.com/</a></p>
 
 ### Tecnologias Utilizadas 💻
 
